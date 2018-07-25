@@ -13,7 +13,7 @@ class UsersController < ApplicationController
   end
 
   post '/signup' do
-    if params.values.include? ""
+    if params.values.include?("")
       redirect '/signup'
     else
       @user = User.create(username: params[:username], email: params[:email], password: params[:password])
