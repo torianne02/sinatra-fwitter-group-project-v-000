@@ -49,7 +49,8 @@ class TweetsController < ApplicationController
           redirect '/tweets/#{@tweet.id}'
         else
           redirect '/tweets/#{@tweet.id}/edit'
-
+        end
+      end
     else
       redirect '/login'
     end
