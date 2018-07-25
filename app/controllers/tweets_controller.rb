@@ -32,7 +32,7 @@ class TweetsController < ApplicationController
       if !session[:user_id] == @tweet.user_id
         redirect '/tweets'
       else
-        erb :'/tweets/edit'
+        erb :'tweets/edit'
       end
     else
       redirect '/login'
