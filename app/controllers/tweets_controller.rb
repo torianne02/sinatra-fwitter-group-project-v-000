@@ -3,7 +3,7 @@ class TweetsController < ApplicationController
     if logged_in?
       erb :'/tweets/tweets'
     else
-      redirect '/users/login'
+      redirect '/login'
     end
   end
 
@@ -11,7 +11,7 @@ class TweetsController < ApplicationController
     if logged_in?
       erb :'/tweets/new'
     else
-      redirect '/users/login'
+      redirect '/login'
     end
   end
 
@@ -32,7 +32,7 @@ class TweetsController < ApplicationController
 
       erb :'/tweets/show'
     else
-      redirect '/users/login'
+      redirect '/login'
     end
   end
 
@@ -45,7 +45,7 @@ class TweetsController < ApplicationController
         erb :'/tweets/edit'
       end
     else
-      redirect '/users/login'
+      redirect '/login'
     end
   end
 
@@ -58,7 +58,7 @@ class TweetsController < ApplicationController
         redirect "/tweets/#{@tweet.id}/edit"
       end
     else
-      redirect '/users/login'
+      redirect '/login'
     end
   end
 
