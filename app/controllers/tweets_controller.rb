@@ -15,7 +15,7 @@ class TweetsController < ApplicationController
     end
   end
 
-  post '/tweets' do
+  post '/tweets/new' do
     if params[:content].empty?
       redirect '/tweets/new'
     else
