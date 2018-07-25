@@ -47,6 +47,8 @@ class TweetsController < ApplicationController
         @tweet = Tweet.find_by_id(params[:id])
         if @tweet.update(content: params[:content])
           redirect '/tweets/#{@tweet.id}'
+        else
+          redirect '/tweets/#{@tweet.id}/edit'
 
     else
       redirect '/login'
