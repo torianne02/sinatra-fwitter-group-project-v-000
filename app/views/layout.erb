@@ -2,14 +2,16 @@
 <html>
   <head>
     <title>Fwitter</title>
+    <nav>
+      <% if logged_in? %>
+        <button type="submit" name="submit"><a href="/logout">Log Out</a></button>
+      <% end %>
+    </nav>
   </head>
   <body>
-
     <div class="container">
       <h1>Welcome to Fwitter!</h1>
-      <h2>This is located in layout.erb!</h2>
-      <h2>Don't forget to <strong>yield</strong> your views!</h2>
+      <%= yield %>
     </div>
-
   </body>
 </html>

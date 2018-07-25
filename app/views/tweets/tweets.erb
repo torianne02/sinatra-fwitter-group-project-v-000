@@ -1,0 +1,7 @@
+<h2>Welcome, <%= session[:username] %></h2>
+
+  <% Tweet.all.each do |tweet| %>
+    <p><%= tweet.content %></p>
+    <br>
+  <% end %>
+  
