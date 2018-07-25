@@ -5,8 +5,11 @@
 <h2>Create an Account:</h2>
 
   <form action="/signup" method="post">
-    <p>Username: <input type="text" name="username"></p>
-    <p>Email: <input type="text" name="email"></p>
-    <p>Password: <input type="text" name="password"></p>
-    <input type="submit" value="Sign Up">
+    <label for="username">Username:</label>
+      <input type="text" name="username" id="username">
+    <label for="email">Email:</label>
+      <input type="text" name="email" id="email">
+    <label for="password">Password:</label>
+      <input type="text" name="password" id="password">
+    <button type="submit" value="submit">Create Account</button>
   </form>
